@@ -1,7 +1,7 @@
 import React, { memo, useCallback } from "react";
 
 export default memo(function TodoItem({ item, dispatchTodo }) {
-  console.log("Todo item render");
+  console.log("TodoItem render");
 
   const toggleItemCheck = useCallback(() => {
     dispatchTodo({
