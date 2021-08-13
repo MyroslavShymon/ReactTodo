@@ -9,6 +9,7 @@ const AddTodo = React.lazy(() => import("./Todo/AddTodo"));
 function App() {
   const [state, setState] = useState([]);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos?_limit=5")
       .then((response) => response.json())
